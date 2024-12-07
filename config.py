@@ -23,7 +23,7 @@ BOT_USERNAME = environ.get("BOT_USERNAME", "batches_lecture_provider_bot") # wit
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
-CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
+CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://yefixi9254:hu8ldGaA0ledNFiO@cluster0.af4er1c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -51,7 +51,7 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
 
 # Verify Info :-
-VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
+VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 SHORTLINK_API = environ.get("SHORTLINK_API", "412bd99fccfca9af6a7f44f2b6407007467cdbbb") # shortlink api
